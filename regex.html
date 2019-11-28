@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+     <head>
+
+     </head>
+     <body>
+         <input type="text" id="txt1" onblur ="check()">
+         <button onclick="check"()>click</button>
+         <script>
+    function check(){
+                 var name=document.getElementById('txt1').value
+                 var regexp=/^\[9][8][7]\d{7}$/g
+                 var regexp=/^\w+[@][a-z-A-Z]
+                 var result=regexp.test(name)
+                 if(result){
+                     alert("valid")
+                 }else{
+                     alert("not valid")
+                 }
+        
+        
+    }
+    </script>
+
+     </body>
+     </html>

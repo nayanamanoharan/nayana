@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="data">
+    <button onclick="save()">store</button>
+    <script>
+        function save() {
+            console.log("called")
+            value = document.getElementById('data')
+           var length=localStorage.length
+           if(length>0){
+               var key=length+1
+               localStorage.setItem(key.toString(),value)
+        } else {
+            localStorage.setItem("1",value)
+        }
+        
+
+        }
+
+    </script>
+    </button>
+</body>
+
+</html>

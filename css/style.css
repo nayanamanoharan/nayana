@@ -1,0 +1,41 @@
+.demo{
+    background-color: blue}
+.demo:hover{
+    background-color: aqua}
+tr{
+    background-color: brown;
+    text-align: center;
+    color: yellow
+}
+tr:hover{
+    background-color: green
+}
+.d{
+    margin-left:100px; 
+    background-color: blue;
+    width: 200px;
+    height: 200px
+}
+h1{
+    text-align: center;
+    color: darkgreen;
+    margin-top: 50px;
+    padding-top: 100px;
+    
+}
+div{
+    width: 150px;
+    height: 150px;
+}
+.d1{
+    position: absolute;
+    margin-top: 300px;
+    background-color: red
+}
+.d2{
+    position: relative;
+    margin-top: 250px;
+    background-color: black
+
+}
+@media only screen and 

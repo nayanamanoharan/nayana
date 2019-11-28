@@ -1,0 +1,21 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="data">
+    <button onclick="save()">store</button>
+    <script>
+        function save(){
+            console.log("called")
+            value=document.getElementById('data').value
+            localStorage.setItem("1",value)
+            console.log(localStorage.getItem("1"))
+        }
+    </script>
+    </button>
+</body>
+
+</html>

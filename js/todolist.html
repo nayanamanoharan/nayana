@@ -1,0 +1,33 @@
+<html>
+<head>
+    <h2>To Do List</h2>
+
+</head>
+
+<body>
+    <div>
+        <input type="text" id="task" placeholder="title...">
+        <button onclick="add()">add</button>
+    </div>
+    <script>
+        var todolist=[]
+        function add(){
+            var task = document.getElementById("task").value
+            todolist.push(task)
+            document.getElementById("task").value=""
+            var todoli = document.createElement("div")
+            for (i in todolist) {
+                todoli.innerHTML=todolist[i]+"<br><button onclick='remove("+i+")'>click</button>"
+            }
+            document.getElementById("mylist").appendChild(todoli)
+            }
+        function remove(i){
+            todolist.splice(0,1)
+            console.log(todolist)
+            
+        }
+    </script>
+    <div id=mylist></div>
+</body>
+
+</html>

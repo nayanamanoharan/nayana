@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <body> 
+        <script>
+            function setEmployee(){
+                employee={}
+                var eid=document.getElementById('eid').value
+                var eid=document.getElementById('ena').value
+                var eid=document.getElementById('eia').value
+                employee.empid=eid
+                employee.name=name
+                employee.salary=salary
+                alert("eid"+employee.empid+"\n"+
+                "name="+employee.name+
+                "salary="+employee.salary)
+            }
+        </script>
+        <form action="onsubmit"="setEmployee">
+            <div>
+                <input type="text" id=eid required>
+            </div>
+            <div>
+                <input type="text" id=ena required>
+            </div>
+            <div>
+                <input type="text" id=eia required>
+            </div>
+            <input type="text" id="username">
+            <button onclick="check()">submit</button>
+        </form>
+
+    </body>
+</head>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+
+<body>
+    <script>
+        function newelement() {
+            element = {}
+            var name = document.getElementById('name').value
+            var age = document.getElementById('age').value
+            var dob = document.getElementById('dob').value
+            element.name = name
+            element.age = age
+            element.dob = dob
+            alert("name" + element.name + "\n" +
+                "age=" + element.age +
+                "dob=" + element.dob)
+        }
+    </script>
+    <form action="" class="form-group" name="" id=""></form>
+    <div>
+        <label for="">Name:</label>
+        <input type="text" id="" required>
+    </div>
+    <div>
+        <label for="">Age:</label>
+        <input type="text" id="" required>
+    </div>
+    <div>
+        <label for="">Dob:</label>
+        <input type="date" id="" required>
+    </div>
+
+    <button onclick="check()">submit</button>
+    </form>
+
+</body>
+</head>

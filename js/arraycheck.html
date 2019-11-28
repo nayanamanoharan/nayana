@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var arr=["a","b",12,34,"c"]
+            result=arr.every((x)=>{
+            var regex=/[a-zA-Z]+/g
+            return regex.test(x)
+        })
+        console.log(result)
+        var str="i love my india"
+        words=str.split("")
+        words.forEach(element=>{
+            console.log(element)
+        });
+        var stmt="java script"+"is interpreted java script"+"is object oriented"
+        function a(java,is,script){
+            this.java=java
+            this.is=is
+            this.script=script
+         var a=stmt.match(/java/g).length
+
+        }
+        console.log(a)
+        </script>
+    </body>
+</html>

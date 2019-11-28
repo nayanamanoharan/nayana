@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<body>
+    <script>
+        var vehiclelist=[]
+        function save(){
+            var no= document.getElementById('no').value
+            var entrytime = document.getElementById('entrytime').value
+            var hours = document.getElementById('hours').value
+            vehiclelist.push(no)
+            vehiclelist.push(entrytime) 
+            vehiclelist.push(hours)
+            console.log(vehiclelist)
+
+        }
+
+    </script>
+    <form action="" class="form-group" name="" id=""></form>
+    <div>
+        <label for="">Vehicle Name:</label>
+        <input type="text" id="no" required>  
+    </div>
+    <div>
+        <label for="">Entrytime:</label>
+        <input type="text" id="entrytime" required>    
+    </div>
+    <div>
+        <label for="">Hours:</label>
+        <input type="text" id="hours" required>
+    </div>
+
+    <button onclick="save()">save</button>
+    </form>
+    <div>
+        <button onclick="remove()">remove</button>
+        <div style="display:none"></div>
+        <input type="text" onblur="remove()" id="">
+    </div>
+</body>
+</head>
+</html>
